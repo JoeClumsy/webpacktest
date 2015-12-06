@@ -42,7 +42,10 @@ module.exports = {
 
         loaders: [{
             test: /\.js$/,
-            loader: 'babel?optional[]=runtime' // babel
+            loader: 'babel', // babel
+            query: {
+                presets: ['es2015']
+            }
         }]
 
     }
